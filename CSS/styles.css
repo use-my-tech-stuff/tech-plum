@@ -125,7 +125,7 @@ table {
 * {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
-  font-weight: 400;
+  font-weight: 200;
   box-sizing: border-box; }
 
 .primary-btn {
@@ -137,7 +137,41 @@ table {
   border-radius: 5px;
   width: 200px;
   height: 50px;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
+
+.card {
+  text-align: center;
+  margin: 0 15px; }
+  .card .card-content {
+    background: #ffffff;
+    width: 360px;
+    max-height: 450px;
+    border-radius: 5px;
+    padding: 50px 0;
+    margin: 20px 0; }
+    .card .card-content i {
+      margin-bottom: 40px; }
+    .card .card-content h1 {
+      font-size: 1.6rem;
+      font-weight: 700; }
+    .card .card-content p {
+      margin-top: 20px;
+      padding: 0 50px;
+      font-weight: 400;
+      color: #999999;
+      letter-spacing: 0.2;
+      line-height: 25px; }
+
+.works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background: #ebeff8; }
+  .works .cards {
+    display: flex; }
 
 footer {
   font-family: "Roboto", sans-serif;
@@ -149,5 +183,9 @@ footer {
     padding: 30px;
     line-height: 50px; }
     footer ul li {
-      color: #fff;
-      padding: 0 50px; }
+      color: #ffffff;
+      padding: 0 50px;
+      transition: 0.2s ease-in-out; }
+      footer ul li:hover:not(:first-child) {
+        cursor: pointer;
+        color: #cccccc; }

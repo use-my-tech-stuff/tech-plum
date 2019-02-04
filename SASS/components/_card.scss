@@ -1,0 +1,32 @@
+.card {
+    text-align: center;
+    margin: 0 15px;
+
+    .card-content {
+        background: $white;
+        width: 360px;
+        max-height: 450px;
+        border-radius: 5px;
+        padding: 50px 0;
+        margin: 20px 0;
+
+        i {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: $font-size-medium;
+            font-weight: $font-weight-bold;
+        }
+
+        p {
+            margin-top: 20px;
+            padding: 0 50px;
+            font-weight: $font-weight-default;
+            color: darken($color: $white, $amount: 40%);
+            letter-spacing: 0.2;
+            line-height: 25px;
+        }
+    }
+
+}

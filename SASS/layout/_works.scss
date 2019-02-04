@@ -1,0 +1,13 @@
+.works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $font-stack;
+    background: $blue-white;
+
+    .cards {
+        display: flex;
+    }
+
+}
