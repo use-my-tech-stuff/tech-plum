@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     font-family: $font-stack;
-    background: $blue-white;
+    background: lighten($color: $blue-white, $amount: 2.5%);
     padding: 25px 0;
 
     .works-heading {
@@ -14,6 +14,7 @@
 
     .works-text {
         margin: 10px 0;
+        color: darken($color: $white, $amount: 50%)
     }
 
     .cards {
