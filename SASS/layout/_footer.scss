@@ -12,13 +12,18 @@ footer {
         li {
             color: $white;
             padding: 0 50px;
-            transition: 0.2s ease-in-out;
 
-            &:hover:not(:first-child) {
-                cursor: pointer;
-                color: darken($color: $white, $amount: 20%)
+            a {
+                color: $white;
+                transition: 0.2s ease-in-out;
+                text-decoration: none;
+
+                &:hover {
+                    cursor: pointer;
+                    color: darken($color: $white, $amount: 20%)
+                }
             }
-        }
 
+        }
     }
 }
