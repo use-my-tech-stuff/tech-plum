@@ -142,6 +142,36 @@ table {
   text-align: center;
   text-decoration: none; }
 
+.product-btn-primary {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #0260ee;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  height: 40px;
+  width: 150px;
+  padding: 10px;
+  line-height: 10px; }
+
+.product-btn-secondary {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0260ee;
+  background: transparent;
+  border: 1px solid #0260ee;
+  border-radius: 5px;
+  outline: none;
+  height: 40px;
+  width: 150px;
+  padding: 10px;
+  line-height: 10px;
+  transition: 0.2s ease-in-out; }
+  .product-btn-secondary:hover {
+    background: #0260ee;
+    color: #ffffff; }
+
 .card {
   text-align: center;
   margin: 0 15px;
@@ -168,6 +198,35 @@ table {
       color: #999999;
       letter-spacing: 0.2;
       line-height: 25px; }
+
+.featured-card {
+  max-width: 360px;
+  max-height: 450px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+  box-shadow: 7px 9px 48px 0px rgba(0, 0, 0, 0.1); }
+  .featured-card img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .featured-card .featured-card-content {
+    margin: 10px; }
+    .featured-card .featured-card-content h1 {
+      font-weight: 900;
+      font-size: 1rem;
+      padding: 10px 0; }
+      .featured-card .featured-card-content h1 span {
+        font-weight: 500; }
+    .featured-card .featured-card-content p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 20px; }
+    .featured-card .featured-card-content button {
+      margin: 10px 0; }
 
 header {
   width: 100%;
@@ -215,6 +274,27 @@ header {
     color: gray; }
   .works .cards {
     display: flex; }
+
+.featured {
+  background: white;
+  padding: 50px 0; }
+  .featured .featured-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .featured .featured-content .featured-content-heading {
+      margin-bottom: 50px;
+      color: #0c1425;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-size: 2.2rem; }
+    .featured .featured-content .featured-products {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
 
 footer {
   font-family: "Roboto", sans-serif;
