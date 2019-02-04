@@ -1,0 +1,12 @@
+// Contains global styles, such as resets, typography, colors, etc.
+@import 'base/base';
+
+// Components
+@import 'components/card';
+
+// Layout
+@import 'layout/navigation';
+@import 'layout/footer';
+
+// Utility
+@import 'utils/mixins';
