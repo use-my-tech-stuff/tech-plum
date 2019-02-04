@@ -129,6 +129,28 @@ table {
     border-spacing: 0;
 }
 
+// End CSS reset
+
+$font-stack: 'Roboto',
+sans-serif;
+
+$font-size-default: 1rem;
+$font-size-medium: 1.6rem;
+$font-size-big: 2.2rem;
+
+$font-weight-default: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$white:#ffffff;
+$blue-white: #ebeff8;
+$blue: #0260ee;
+$dark-blue:#0c1425;
+
 * {
+    font-family: $font-stack;
+    font-size: 62.5%;
+    font-weight: $font-weight-default;
     box-sizing: border-box;
 }
