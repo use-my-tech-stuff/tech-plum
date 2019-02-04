@@ -1,6 +1,11 @@
 .card {
     text-align: center;
     margin: 0 15px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
 
     .card-content {
         background: $white;
@@ -8,7 +13,8 @@
         max-height: 450px;
         border-radius: 5px;
         padding: 70px 0;
-        margin: 30px 0;
+        margin-top: 30px;
+        box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.1);
 
         i {
             margin-bottom: 40px;
@@ -28,5 +34,4 @@
             line-height: 25px;
         }
     }
-
 }
