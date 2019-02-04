@@ -138,3 +138,16 @@ table {
   width: 200px;
   height: 50px;
   outline: none; }
+
+footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: #0c1425; }
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 30px;
+    line-height: 50px; }
+    footer ul li {
+      color: #fff;
+      padding: 0 50px; }
