@@ -5,6 +5,16 @@
     flex-direction: column;
     font-family: $font-stack;
     background: $blue-white;
+    padding: 25px 0;
+
+    .works-heading {
+        font-size: $font-size-big;
+        font-weight: $font-weight-black;
+    }
+
+    .works-text {
+        margin: 10px 0;
+    }
 
     .cards {
         display: flex;
