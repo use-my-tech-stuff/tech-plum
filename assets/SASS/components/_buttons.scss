@@ -14,7 +14,7 @@
 }
 
 
-.product-btn-primary {
+.btn-secondary {
     font-size: $font-size-default;
     font-weight: $font-weight-medium;
     color: $blue;
@@ -26,6 +26,7 @@
     height: 50px;
     padding: 10px;
     line-height: 10px;
+    cursor: pointer;
     transition: 0.2s ease-in-out;
 
     &:hover {
@@ -34,7 +35,7 @@
     }
 }
 
-.product-btn-secondary {
+.product-btn {
     font-size: $font-size-default;
     font-weight: $font-weight-medium;
     color: $blue;

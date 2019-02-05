@@ -13,8 +13,12 @@
     <!-- Font Family -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -28,7 +32,7 @@
                 <a class="nav-link" href="#">Rent a device</a>
                 <a class="nav-link" href="#">List a device</a>
                 <a class="nav-link" href="#">Login</a>
-                <a href="#"><button class="product-btn-primary">Create an account</button></a>
+                <a href="#"><button class="btn-secondary">Create an account</button></a>
             </div>
         </nav>
     </header><!-- navigation -->
@@ -45,7 +49,7 @@
         </div>
 
         <div class="hero-content">
-            <img src="Images/selection-of-devices.jpg" alt="">
+            <img src="assets/images/selection-of-devices.png" alt="Collection of devices">
         </div>
     </section>
 
@@ -96,19 +100,32 @@
             <div class="featured-products">
 
                 <div class="featured-card">
-                    <img src="Images/imac-pro.png" alt="">
+                    <img src="assets/images/imac-pro.png" alt="iMac Pro">
                     <div class="featured-card-content">
                         <h1>iMac Pro &bullet; <span>$150 per day</span></h1>
                         <p>Completely remade for pro users, iMac Pro features the most powerful collection of graphics,
                             processors, storage,
                             memory, and I/O of any Mac ever.
                         </p>
-                        <a href="#"><button class="product-btn-secondary">Rent</button></a>
+                        <a href="#"><button class="product-btn">Rent</button></a>
                     </div>
                 </div> <!-- .featured-card -->
 
                 <div class="featured-card">
-                    <img src="Images/ipad-pro.jpg" alt="">
+                    <img src="assets/images/amazon-echo.jpg" alt="Amazon Echo">
+                    <div class="featured-card-content">
+                        <h1>Amazon Echo &bullet; <span>$5 per day</span></h1>
+                        <p>
+                            Echo connects to Alexa to play music, read the news, set alarms and timers, answer
+                            questions, control compatible smart
+                            home devices, and more.
+                        </p>
+                        <a href="#"><button class="product-btn">Rent</button></a>
+                    </div>
+                </div> <!-- .featured-card -->
+
+                <div class="featured-card">
+                    <img src="assets/images/ipad-pro.jpg" alt="iPad Pro">
                     <div class="featured-card-content">
                         <h1>iPad Pro &bullet; <span>$50 per day</span></h1>
                         <p>The new iPad Pro features an all-screen design, an edge-to-edge Liquid Retina display, the
@@ -116,21 +133,58 @@
                             Bionic chip, Face ID,
                             and is the thinnest iPad ever.
                         </p>
-                        <a href="#"><button class="product-btn-secondary">Rent</button></a>
+                        <a href="#"><button class="product-btn">Rent</button></a>
                     </div>
                 </div> <!-- .featured-card -->
 
                 <div class="featured-card">
-                    <img src="Images/iphone xs.jpg" alt="">
+                    <img src="assets/images/xbox-one.jpg" alt="Xbox one S">
+                    <div class="featured-card-content">
+                        <h1>Xbox One S &bullet; <span>$20 per day</span></h1>
+                        <p>
+                            Get the best value in games and entertainment. Xbox One S has over 1300 games, built-in 4K
+                            Ultra HD Blu-ray™ and 4K
+                            video streaming.
+                        </p>
+                        <a href="#"><button class="product-btn">Rent</button></a>
+                    </div>
+                </div> <!-- .featured-card -->
+
+                <div class="featured-card">
+                    <img src="assets/images/iphone xs.jpg" alt="iPhone XS">
                     <div class="featured-card-content">
                         <h1>iPhone XS &bullet; <span>$50 per day</span></h1>
                         <p>The smartest, most powerful chip in a smartphone. And a breakthrough dual-camera system with
                             Depth Control. iPhone XS
                             is everything you love about iPhone.
                         </p>
-                        <a href="#"><button class="product-btn-secondary">Rent</button></a>
+                        <a href="#"><button class="product-btn">Rent</button></a>
                     </div>
                 </div> <!-- .featured-card -->
+
+                <div class="featured-card">
+                    <img src="assets/images/playstation.jpg" alt="Playstation 4">
+                    <div class="featured-card-content">
+                        <h1>Playstation 4 &bullet; <span>$30 per day</span></h1>
+                        <p>The new slim PlayStation®4 opens the door to extraordinary journeys through immersive new
+                            gaming worlds and a deeply
+                            connected gaming community.
+                        </p>
+                        <a href="#"><button class="product-btn">Rent</button></a>
+                    </div>
+                </div> <!-- .featured-card -->
+
+                <div class="featured-card">
+                    <img src="assets/images/apple-watch.png" alt="Apple Watch">
+                    <div class="featured-card-content">
+                        <h1>Apple Watch &bullet; <span>$10 per day</span></h1>
+                        <p>The largest Apple Watch display yet. New electrical heart sensor. Re-engineered Digital
+                            Crown with haptic feedback.
+                            Entirely familiar, yet completely new.</p>
+                        <a href="#"><button class="product-btn">Rent</button></a>
+                    </div>
+                </div> <!-- .featured-card -->
+
 
             </div><!-- .featured-products -->
         </div>
@@ -146,8 +200,14 @@
         </ul>
     </footer><!-- footer -->
 
+
+    <!-- Slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
     <!-- JavaScript -->
-    <script src="JS/index.js"></script>
+    <script src="assets/JS/index.js"></script>
 </body>
 
 </html>
