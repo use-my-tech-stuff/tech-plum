@@ -1,0 +1,11 @@
+// Contains global styles, such as resets, typography, colors, etc.
+@import 'base/base';
+
+// Utility
+@import 'utils/mixins';
+
+// Components
+@import 'components/components.scss';
+
+// Layout
+@import 'layout/layout.scss';
