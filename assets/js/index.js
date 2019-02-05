@@ -8,11 +8,20 @@ $(document).ready(function () {
         arrows: false
     });
 
+
+
     $('.reviews-content').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500,
-        arrows: false
+        arrows: false,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
     });
 });

@@ -21,5 +21,13 @@
     .reviews-content {
         display: flex;
         width: 52%;
+
+        @media ($laptop) {
+            width: 72%;
+        }
+
+        @media ($tablet) {
+            width: 100%;
+        }
     }
 }

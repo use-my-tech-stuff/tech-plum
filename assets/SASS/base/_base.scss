@@ -131,23 +131,32 @@ table {
 
 // End CSS reset
 
+// Font family
 $font-stack: 'Roboto',
 sans-serif;
 
+// Font sizes
 $font-size-default: 1rem;
 $font-size-medium: 1.6rem;
 $font-size-big: 2.2rem;
 $font-size-giant: 3.0rem;
 
+// Font weight
 $font-weight-default: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
+// Colors
 $white:#ffffff;
 $blue-white: #ebeff8;
 $blue: #0260ee;
 $dark-blue:#0c1425;
+
+// Responsive vars
+$mobile: #{"max-width: 500px"};
+$tablet: #{"max-width: 1000px"};
+$laptop: #{"max-width: 1440px"};
 
 * {
     font-family: $font-stack;
