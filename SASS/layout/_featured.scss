@@ -4,8 +4,6 @@
 
     .featured-content {
         display: flex;
-        justify-content: center;
-        align-content: center;
         align-items: center;
         flex-direction: column;
 
@@ -15,7 +13,6 @@
             font-family: $font-stack;
             font-weight: $font-weight-black;
             font-size: $font-size-big;
-
         }
 
         .featured-products {
