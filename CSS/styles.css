@@ -202,18 +202,24 @@ table {
 .featured-card {
   max-width: 360px;
   max-height: 450px;
+  height: 450px;
   background: #ffffff;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   margin: 15px;
   box-shadow: 7px 9px 48px 0px rgba(0, 0, 0, 0.1); }
   .featured-card img {
+    max-height: 240px;
+    height: 240px;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
   .featured-card .featured-card-content {
-    margin: 10px; }
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    height: 200px; }
     .featured-card .featured-card-content h1 {
       font-weight: 900;
       font-size: 1rem;
@@ -226,7 +232,7 @@ table {
       letter-spacing: 0.2px;
       line-height: 20px; }
     .featured-card .featured-card-content button {
-      margin: 10px 0; }
+      margin: 20px 0; }
 
 header {
   width: 100%;
