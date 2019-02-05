@@ -257,10 +257,10 @@ table {
       font-weight: 700;
       font-size: 1.2rem; }
     .review-card .review-person img {
-      width: 60px;
-      height: 60px;
+      max-width: 60px;
+      max-height: 60px;
       border-radius: 50%;
-      object-fit: contain;
+      object-fit: cover;
       margin: 0 20px 0 0; }
   .review-card .review-body p {
     margin: 20px 0;
