@@ -193,10 +193,14 @@ table {
     border-radius: 5px;
     padding: 70px 0;
     margin-top: 30px; }
-    @media (max-width: 800px) {
+    @media (max-width: 1100px) {
       .card .card-content {
         padding: 30px 0;
         width: 300px; } }
+    @media (max-width: 800px) {
+      .card .card-content {
+        padding: 70px 0;
+        width: 360px; } }
     .card .card-content i {
       margin-bottom: 40px; }
     .card .card-content h1 {
@@ -291,9 +295,33 @@ header {
     line-height: 50px;
     font-family: "Roboto", sans-serif;
     box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.5); }
+    @media (max-width: 1100px) {
+      header nav {
+        flex-direction: column; } }
+    @media (max-width: 1100px) {
+      header nav .logo {
+        display: flex;
+        justify-content: space-between;
+        height: 10%;
+        align-items: baseline; } }
     header nav .logo h1 {
       font-size: 1.6rem;
       font-weight: 900; }
+    header nav .logo .hamburger {
+      display: none;
+      outline: none; }
+      @media (max-width: 1100px) {
+        header nav .logo .hamburger {
+          display: inline-block; } }
+    @media (min-width: 1440px) {
+      header nav .nav-items {
+        display: block; } }
+    @media (max-width: 1100px) {
+      header nav .nav-items {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     header nav .nav-items .nav-link {
       display: inline-block;
       text-decoration: none;
@@ -371,7 +399,7 @@ header {
     @media (max-width: 800px) {
       .works .cards {
         display: flex;
-        flex-wrap: wrap; } }
+        flex-direction: column; } }
     @media (max-width: 500px) {
       .works .cards {
         display: flex;
@@ -423,9 +451,12 @@ header {
     @media (max-width: 1440px) {
       .reviews .reviews-content {
         width: 72%; } }
+    @media (max-width: 1100px) {
+      .reviews .reviews-content {
+        width: 53%; } }
     @media (max-width: 800px) {
       .reviews .reviews-content {
-        width: 52%; } }
+        width: 60%; } }
     @media (max-width: 500px) {
       .reviews .reviews-content {
         width: 100%; } }

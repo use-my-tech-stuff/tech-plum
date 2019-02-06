@@ -21,8 +21,7 @@ $(document).ready(function () {
         ]
     });
 
-
-
+    // user reviews carousel
     $('.reviews-content').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -30,7 +29,13 @@ $(document).ready(function () {
         autoplaySpeed: 2500,
         arrows: false,
         responsive: [{
-            breakpoint: 1200,
+            breakpoint: 1366,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }, {
+            breakpoint: 800,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -38,3 +43,12 @@ $(document).ready(function () {
         }]
     });
 });
+
+// Mobile navigation
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav-items');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+})

@@ -30,8 +30,12 @@
             width: 72%;
         }
 
+        @media ($pad) {
+            width: 53%;
+        }
+
         @media ($tablet) {
-            width: 52%;
+            width: 60%;
         }
 
         @media ($mobile) {
