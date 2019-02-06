@@ -5,7 +5,20 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500,
-        arrows: false
+        arrows: false,
+        responsive: [,
+            {
+                breakpoint: 1366,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 

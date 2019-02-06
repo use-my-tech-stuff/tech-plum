@@ -15,11 +15,15 @@
 
     .reviews-text {
         margin: 10px 0 30px 0;
-        color: darken($color: $white, $amount: 50%)
+        color: darken($color: $white, $amount: 50%);
+
+        @media ($mobile) {
+            text-align: center;
+            line-height: 20px;
+        }
     }
 
     .reviews-content {
-        display: flex;
         width: 52%;
 
         @media ($laptop) {
@@ -27,6 +31,10 @@
         }
 
         @media ($tablet) {
+            width: 52%;
+        }
+
+        @media ($mobile) {
             width: 100%;
         }
     }

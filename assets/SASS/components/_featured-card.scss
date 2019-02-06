@@ -1,5 +1,4 @@
 .featured-card {
-    max-width: 360px;
     max-height: 450px;
     height: 450px;
     background: $white;
@@ -7,6 +6,7 @@
     font-family: $font-stack;
     margin: 15px;
     outline: none;
+    cursor: grab;
 
     img {
         max-height: 240px;
@@ -40,6 +40,7 @@
             line-height: 20px;
             height: 77px;
             max-height: 77px;
+            margin: 5px 0;
         }
 
         button {

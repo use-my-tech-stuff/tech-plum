@@ -14,11 +14,25 @@
 
     .works-text {
         margin: 10px 0;
-        color: darken($color: $white, $amount: 50%)
+        color: darken($color: $white, $amount: 50%);
+
+        @media ($mobile) {
+            text-align: center;
+        }
     }
 
     .cards {
         display: flex;
+
+        @media ($tablet) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media ($mobile) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 }

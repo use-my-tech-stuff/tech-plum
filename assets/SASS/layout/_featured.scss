@@ -17,10 +17,15 @@
         }
 
         .featured-products {
-            width: 61%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            width: 1150px;
+
+            @media ($pad) {
+                width: 760px;
+            }
+
+            @media ($mobile) {
+                width: 100%;
+            }
         }
     }
 }

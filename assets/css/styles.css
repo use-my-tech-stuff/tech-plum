@@ -127,6 +127,9 @@ table {
   font-size: 62.5%;
   font-weight: 200;
   box-sizing: border-box; }
+  *::selection {
+    background: #0c1425;
+    color: #ffffff; }
 
 .primary-btn {
   font-size: 1rem;
@@ -190,6 +193,10 @@ table {
     border-radius: 5px;
     padding: 70px 0;
     margin-top: 30px; }
+    @media (max-width: 800px) {
+      .card .card-content {
+        padding: 30px 0;
+        width: 300px; } }
     .card .card-content i {
       margin-bottom: 40px; }
     .card .card-content h1 {
@@ -202,16 +209,19 @@ table {
       color: #999999;
       letter-spacing: 0.2;
       line-height: 25px; }
+      @media (max-width: 800px) {
+        .card .card-content p {
+          padding: 0 20px; } }
 
 .featured-card {
-  max-width: 360px;
   max-height: 450px;
   height: 450px;
   background: #ffffff;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   margin: 15px;
-  outline: none; }
+  outline: none;
+  cursor: grab; }
   .featured-card img {
     max-height: 240px;
     height: 240px;
@@ -236,7 +246,8 @@ table {
       letter-spacing: 0.2px;
       line-height: 20px;
       height: 77px;
-      max-height: 77px; }
+      max-height: 77px;
+      margin: 5px 0; }
     .featured-card .featured-card-content button {
       margin: 20px 0; }
 
@@ -248,7 +259,8 @@ table {
   box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.1);
   padding: 30px 3em;
   font-family: "Roboto", sans-serif;
-  outline: none; }
+  outline: none;
+  cursor: grab; }
   .review-card .review-person {
     display: flex;
     line-height: 60px; }
@@ -305,18 +317,37 @@ header {
   padding: 200px 0 100px 0; }
   .hero .hero-content {
     max-width: 700px; }
+    @media (max-width: 500px) {
+      .hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .hero .hero-content h1 {
       font-size: 3rem;
-      font-weight: 900; }
+      font-weight: 900;
+      margin: 0 30px; }
+      @media (max-width: 500px) {
+        .hero .hero-content h1 {
+          text-align: center; } }
     .hero .hero-content p {
-      margin: 30px 0;
+      margin: 30px 30px;
       width: 80%;
       letter-spacing: 0.3px;
       line-height: 25px; }
+      @media (max-width: 500px) {
+        .hero .hero-content p {
+          text-align: center; } }
     .hero .hero-content button {
-      margin: 0 1px; }
+      margin: 0 31px; }
+      @media (max-width: 500px) {
+        .hero .hero-content button {
+          align-items: center; } }
     .hero .hero-content img {
-      width: 450px; }
+      width: 450px;
+      margin: 0 30px; }
+      @media (max-width: 500px) {
+        .hero .hero-content img {
+          display: none; } }
 
 .works {
   display: flex;
@@ -332,8 +363,19 @@ header {
   .works .works-text {
     margin: 10px 0;
     color: gray; }
+    @media (max-width: 500px) {
+      .works .works-text {
+        text-align: center; } }
   .works .cards {
     display: flex; }
+    @media (max-width: 800px) {
+      .works .cards {
+        display: flex;
+        flex-wrap: wrap; } }
+    @media (max-width: 500px) {
+      .works .cards {
+        display: flex;
+        flex-direction: column; } }
 
 .featured {
   background: #0c1425;
@@ -349,10 +391,13 @@ header {
       font-weight: 900;
       font-size: 2.2rem; }
     .featured .featured-content .featured-products {
-      width: 61%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
+      width: 1150px; }
+      @media (max-width: 1100px) {
+        .featured .featured-content .featured-products {
+          width: 760px; } }
+      @media (max-width: 500px) {
+        .featured .featured-content .featured-products {
+          width: 100%; } }
 
 .reviews {
   font-family: "Roboto", sans-serif;
@@ -369,13 +414,19 @@ header {
   .reviews .reviews-text {
     margin: 10px 0 30px 0;
     color: gray; }
+    @media (max-width: 500px) {
+      .reviews .reviews-text {
+        text-align: center;
+        line-height: 20px; } }
   .reviews .reviews-content {
-    display: flex;
     width: 52%; }
     @media (max-width: 1440px) {
       .reviews .reviews-content {
         width: 72%; } }
-    @media (max-width: 1000px) {
+    @media (max-width: 800px) {
+      .reviews .reviews-content {
+        width: 52%; } }
+    @media (max-width: 500px) {
       .reviews .reviews-content {
         width: 100%; } }
 
@@ -388,6 +439,13 @@ footer {
     list-style-type: none;
     padding: 30px;
     line-height: 50px; }
+    @media (max-width: 800px) {
+      footer ul {
+        flex-direction: column;
+        align-items: center; } }
+    @media (max-width: 800px) {
+      footer ul button {
+        margin: 20px 0; } }
     footer ul li {
       color: #ffffff;
       padding: 0 50px; }
