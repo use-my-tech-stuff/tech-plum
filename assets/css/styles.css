@@ -126,10 +126,14 @@ table {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
   font-weight: 200;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
   *::selection {
     background: #0c1425;
     color: #ffffff; }
+
+.container {
+  margin-top: 100px; }
 
 .primary-btn {
   font-size: 1rem;
@@ -285,7 +289,8 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  background: #ffffff; }
+  background: #ffffff;
+  top: 0; }
   header nav {
     width: 100%;
     display: flex;
@@ -313,9 +318,6 @@ header {
       @media (max-width: 1100px) {
         header nav .logo .hamburger {
           display: inline-block; } }
-    @media (min-width: 1440px) {
-      header nav .nav-items {
-        display: block; } }
     @media (max-width: 1100px) {
       header nav .nav-items {
         display: none;
@@ -337,12 +339,15 @@ header {
       header nav .nav-items .nav-link:hover::after {
         width: 100%; }
 
+.active {
+  display: flex; }
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  padding: 200px 0 100px 0; }
+  padding: 100px 0; }
   .hero .hero-content {
     max-width: 700px; }
     @media (max-width: 500px) {
@@ -384,7 +389,7 @@ header {
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   background: #f4f7fb;
-  padding: 40px 0; }
+  padding: 60px 0; }
   .works .works-heading {
     font-size: 2.2rem;
     font-weight: 900; }
