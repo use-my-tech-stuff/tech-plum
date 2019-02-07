@@ -1,0 +1,36 @@
+.review-card {
+    margin: 15px;
+    max-width: 510px;
+    border-radius: 5px;
+    background: $white;
+    box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.1);
+    padding: 30px 3em;
+    font-family: $font-stack;
+    outline: none;
+    cursor: grab;
+
+    .review-person {
+        display: flex;
+        line-height: 60px;
+
+        h1 {
+            font-weight: $font-weight-bold;
+            font-size: 1.2rem;
+        }
+
+        img {
+            max-width: 60px;
+            max-height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 20px 0 0;
+        }
+    }
+
+    .review-body {
+        p {
+            margin: 20px 0;
+            line-height: 25px;
+        }
+    }
+}

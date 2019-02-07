@@ -1,0 +1,50 @@
+.featured-card {
+    max-height: 450px;
+    height: 450px;
+    background: $white;
+    border-radius: 5px;
+    font-family: $font-stack;
+    margin: 15px;
+    outline: none;
+    cursor: grab;
+
+    img {
+        max-height: 240px;
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .featured-card-content {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+        height: 200px;
+
+        h1 {
+            font-weight: $font-weight-black;
+            font-size: $font-size-default;
+            padding: 10px 0;
+
+            span {
+                font-weight: $font-weight-medium;
+            }
+        }
+
+        p {
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            line-height: 20px;
+            height: 77px;
+            max-height: 77px;
+            margin: 5px 0;
+        }
+
+        button {
+            margin: 20px 0;
+        }
+    }
+}

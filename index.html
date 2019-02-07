@@ -13,8 +13,15 @@
     <!-- Font Family -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+
+    <!-- Hamburger menu -->
+    <link rel="stylesheet" href="assets/css/hamburgers.css">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -22,115 +29,271 @@
         <nav>
             <div class="logo">
                 <h1>Tech Plum</h1>
+                <!-- Hamburger -->
+                <button class="hamburger hamburger--emphatic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
-
             <div class="nav-items">
                 <a class="nav-link" href="#">Rent a device</a>
                 <a class="nav-link" href="#">List a device</a>
                 <a class="nav-link" href="#">Login</a>
-                <a href="#"><button class="primary-btn">Create an account</button></a>
+                <a href="#"><button class="btn-secondary">Create an account</button></a>
             </div>
         </nav>
     </header><!-- navigation -->
+    <div class="container">
 
-    <section class="works">
-        <h1 class="works-heading">How it Works</h1>
-        <p class="works-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-        <div class="cards">
-            <div class="card">
-                <div class="card-content">
-                    <i class="fas fa-user fa-5x"></i>
-                    <h1>Create an account</h1>
-                    <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam ets
-                        vitae
-                        dictis netsum.
-                    </p>
-                </div>
-            </div><!-- .card -->
-
-            <div class="card">
-                <div class="card-content">
-                    <i class="fas fa-tablet-alt fa-5x"></i>
-                    <h1>Rent a device</h1>
-                    <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam ets
-                        vitae
-                        dictis netsum.
-                    </p>
-                </div>
-            </div><!-- .card -->
-
-            <div class="card">
-                <div class="card-content">
-                    <i class="fas fa-shipping-fast fa-5x"></i>
-                    <h1>Receive your device</h1>
-                    <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam ets
-                        vitae
-                        dictis netsum.
-                    </p>
-                </div>
-            </div><!-- .card -->
-        </div><!-- .cards -->
-    </section><!-- .works -->
-
-    <section class="featured">
-        <div class="featured-content">
-            <h1 class="featured-content-heading">Featured Listings</h1>
-
-            <div class="featured-products">
-                <div class="featured-card">
-                    <img src="Images/imac-pro.png" alt="">
-                    <div class="featured-card-content">
-                        <h1>iMac Pro &bullet; <span>$50 per day</span></h1>
-                        <p>Completely remade for pro users, iMac Pro features the most powerful collection of graphics,
-                            processors, storage,
-                            memory, and I/O of any Mac ever.
-                        </p>
-                        <a href="#"><button class="product-btn-secondary">Rent</button></a>
-                    </div>
-                </div> <!-- .featured-card -->
-
-                <div class="featured-card">
-                    <img src="Images/ipad-pro.jpg" alt="">
-                    <div class="featured-card-content">
-                        <h1>iPad Pro &bullet; <span>$50 per day</span></h1>
-                        <p>The new iPad Pro features an all-screen design, an edge-to-edge Liquid Retina display, the
-                            A12X
-                            Bionic chip, Face ID,
-                            and is the thinnest iPad ever.
-                        </p>
-                        <a href="#"><button class="product-btn-secondary">Rent</button></a>
-                    </div>
-                </div> <!-- .featured-card -->
-
-                <div class="featured-card">
-                    <img src="Images/ipad-pro.jpg" alt="">
-                    <div class="featured-card-content">
-                        <h1>iPad Pro &bullet; <span>$50 per day</span></h1>
-                        <p>The new iPad Pro features an all-screen design, an edge-to-edge Liquid Retina display, the
-                            A12X
-                            Bionic chip, Face ID,
-                            and is the thinnest iPad ever.
-                        </p>
-                        <a href="#"><button class="product-btn-secondary">Rent</button></a>
-                    </div>
-                </div> <!-- .featured-card -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Easily gain access to the electronics you need.</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aperiam placeat, vel quaerat
+                    doloribus
+                    animi dicta excepturi culpa? Ex porro officia atque sunt nostrum.
+                </p>
+                <a href="#how-it-works"><button class="primary-btn">Learn More</button></a>
             </div>
-        </div>
-    </section>
 
-    <footer>
-        <ul>
-            <li>@2019 Tech Plum</li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Help</a></li>
-            <a href="#"><button class="primary-btn">Create an account</button></a>
-        </ul>
-    </footer><!-- footer -->
+            <div class="hero-content">
+                <img src="assets/images/selection-of-devices.png" alt="Collection of devices">
+            </div>
+        </section>
+
+        <section id="how-it-works" class="works">
+            <h1 class="works-heading">How It Works</h1>
+            <p class="works-text">3 easy steps and you don't even have to leave your home!</p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-user fa-5x"></i>
+                        <h1>Create an account</h1>
+                        <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam
+                            ets
+                            vitae
+                            dictis netsum.
+                        </p>
+                    </div>
+                </div><!-- .card -->
+
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-tablet-alt fa-5x"></i>
+                        <h1>Rent a device</h1>
+                        <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam
+                            ets
+                            vitae
+                            dictis netsum.
+                        </p>
+                    </div>
+                </div><!-- .card -->
+
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-shipping-fast fa-5x"></i>
+                        <h1>Receive your device</h1>
+                        <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam
+                            ets
+                            vitae
+                            dictis netsum.
+                        </p>
+                    </div>
+                </div><!-- .card -->
+            </div><!-- .cards -->
+        </section><!-- .works -->
+
+        <section class="featured">
+            <div class="featured-content">
+                <h1 class="featured-content-heading">Featured Listings</h1>
+
+                <div class="featured-products">
+
+                    <div class="featured-card">
+                        <img src="assets/images/imac-pro.png" alt="iMac Pro">
+                        <div class="featured-card-content">
+                            <h1>iMac Pro &bullet; <span>$150 per day</span></h1>
+                            <p>Completely remade for pro users, iMac Pro features the most powerful collection of
+                                graphics,
+                                processors, storage,
+                                memory, and I/O of any Mac ever.
+                            </p>
+                            <a href="#"><button class="product-btn">Rent</button></a>
+                        </div>
+                    </div> <!-- .featured-card -->
+
+                    <div class="featured-card">
+                        <img src="assets/images/amazon-echo.jpg" alt="Amazon Echo">
+                        <div class="featured-card-content">
+                            <h1>Amazon Echo &bullet; <span>$5 per day</span></h1>
+                            <p>
+                                Echo connects to Alexa to play music, read the news, set alarms and timers, answer
+                                questions, control compatible smart
+                                home devices, and more.
+                            </p>
+                            <a href="#"><button class="product-btn">Rent</button></a>
+                        </div>
+                    </div> <!-- .featured-card -->
+
+                    <div class="featured-card">
+                        <img src="assets/images/ipad-pro.jpg" alt="iPad Pro">
+                        <div class="featured-card-content">
+                            <h1>iPad Pro &bullet; <span>$50 per day</span></h1>
+                            <p>The new iPad Pro features an all-screen design, an edge-to-edge Liquid Retina display,
+                                the
+                                A12X
+                                Bionic chip, Face ID,
+                                and is the thinnest iPad ever.
+                            </p>
+                            <a href="#"><button class="product-btn">Rent</button></a>
+                        </div>
+                    </div> <!-- .featured-card -->
+
+                    <div class="featured-card">
+                        <img src="assets/images/xbox-one.jpg" alt="Xbox one S">
+                        <div class="featured-card-content">
+                            <h1>Xbox One S &bullet; <span>$20 per day</span></h1>
+                            <p>
+                                Get the best value in games and entertainment. Xbox One S has over 1300 games, built-in
+                                4K
+                                Ultra HD Blu-ray™ and 4K
+                                video streaming.
+                            </p>
+                            <a href="#"><button class="product-btn">Rent</button></a>
+                        </div>
+                    </div> <!-- .featured-card -->
+
+                    <div class="featured-card">
+                        <img src="assets/images/iphone xs.jpg" alt="iPhone XS">
+                        <div class="featured-card-content">
+                            <h1>iPhone XS &bullet; <span>$50 per day</span></h1>
+                            <p>The smartest, most powerful chip in a smartphone. And a breakthrough dual-camera system
+                                with
+                                Depth Control. iPhone XS
+                                is everything you love about iPhone.
+                            </p>
+                            <a href="#"><button class="product-btn">Rent</button></a>
+                        </div>
+                    </div> <!-- .featured-card -->
+
+                    <div class="featured-card">
+                        <img src="assets/images/playstation.jpg" alt="Playstation 4">
+                        <div class="featured-card-content">
+                            <h1>Playstation 4 &bullet; <span>$30 per day</span></h1>
+                            <p>The new slim PlayStation®4 opens the door to extraordinary journeys through immersive
+                                new
+                                gaming worlds and a deeply
+                                connected gaming community.
+                            </p>
+                            <a href="#"><button class="product-btn">Rent</button></a>
+                        </div>
+                    </div> <!-- .featured-card -->
+
+                    <div class="featured-card">
+                        <img src="assets/images/apple-watch.png" alt="Apple Watch">
+                        <div class="featured-card-content">
+                            <h1>Apple Watch &bullet; <span>$10 per day</span></h1>
+                            <p>The largest Apple Watch display yet. New electrical heart sensor. Re-engineered Digital
+                                Crown with haptic feedback.
+                                Entirely familiar, yet completely new.</p>
+                            <a href="#"><button class="product-btn">Rent</button></a>
+                        </div>
+                    </div> <!-- .featured-card -->
+
+                </div><!-- .featured-products -->
+            </div><!-- .featured-content -->
+        </section><!-- .featured -->
+
+        <section class="reviews">
+            <h1 class="reviews-heading">Satisfied Customers</h1>
+            <p class="reviews-text">Create an account today and join the many that have enjoyed our service.</p>
+
+            <div class="reviews-content">
+
+                <div class="review-card">
+                    <div class="review-person">
+                        <img src="assets/images/review-image-1.jpg" alt="Jake Green Review Avatar">
+                        <h1>Jake Green</h1>
+                    </div>
+                    <div class="review-body">
+                        <p>"Nullam feugiat arcu dui, id feugiat dui pharetra eget. Fusce ornare enim volutpat mi
+                            malesuada,
+                            vitae ultrices magna
+                            pharetra. Proin eu malesuada nisi. Maecenas congue maximus turpis, vel hendrerit orci
+                            varius
+                            et."
+                        </p>
+                    </div>
+                </div><!-- .review-card -->
+
+                <div class="review-card">
+                    <div class="review-person">
+                        <img src="assets/images/review-image-2.jpg" alt="Lacie Hampton Review Avatar">
+                        <h1>Lacie Hampton</h1>
+                    </div>
+                    <div class="review-body">
+                        <p>"Cras ut lorem eget lorem lobortis ultricies. Aliquam feugiat ullamcorper magna, id lacinia
+                            nibh
+                            tincidunt quis. Aliquam
+                            ultrices leo a bibendum tempus. Sed mattis porttitor ex, in ornare mi sodales quis."
+                        </p>
+                    </div>
+                </div><!-- .review-card -->
+
+                <div class="review-card">
+                    <div class="review-person">
+                        <img src="assets/images/review-image-3.jpg" alt="Jake Green Review Avatar">
+                        <h1>Paulina Ramirez</h1>
+                    </div>
+                    <div class="review-body">
+                        <p>"Nullam feugiat arcu dui, id feugiat dui pharetra eget. Fusce ornare enim volutpat mi
+                            malesuada,
+                            vitae ultrices magna
+                            pharetra. Proin eu malesuada nisi. Maecenas congue maximus turpis, vel hendrerit orci
+                            varius
+                            et."
+                        </p>
+                    </div>
+                </div><!-- .review-card -->
+
+                <div class="review-card">
+                    <div class="review-person">
+                        <img src="assets/images/review-image-4.jpg" alt="Justin Shaifer Review Avatar">
+                        <h1>Justin Shaifer</h1>
+                    </div>
+                    <div class="review-body">
+                        <p>"Obcaecati consequuntur aliquam pariatur! Quoexcepturi perspiciatis eveniet nulla! In
+                            pariatur
+                            fugit, accusamus consequuntur illum esse laudantium
+                            optio harum cupiditate exercitationem perferendis."
+                        </p>
+                    </div>
+                </div><!-- .review-card -->
+            </div>
+
+        </section>
+
+        <footer>
+            <ul>
+                <li>@2019 Tech Plum</li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Help</a></li>
+                <a href="#"><button class="primary-btn">Create an account</button></a>
+            </ul>
+        </footer><!-- footer -->
+    </div><!-- .container -->
+
+
+    <!-- Slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 
     <!-- JavaScript -->
-    <script src="JS/index.js"></script>
+    <script src="assets/JS/index.js"></script>
 </body>
 
 </html>

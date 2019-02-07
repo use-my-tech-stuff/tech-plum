@@ -1,0 +1,191 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// End CSS reset
+
+// Font family
+$font-stack: 'Roboto',
+sans-serif;
+
+// Font sizes
+$font-size-default: 1rem;
+$font-size-medium: 1.6rem;
+$font-size-big: 2.2rem;
+$font-size-giant: 3.0rem;
+
+// Font weight
+$font-weight-default: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Colors
+$white:#ffffff;
+$blue-white: #ebeff8;
+$blue: #0260ee;
+$dark-blue:#0c1425;
+
+// Responsive vars
+$mobile: #{"max-width: 500px"};
+$tablet: #{"max-width: 800px"};
+$pad: #{"max-width: 1100px"};
+$laptop: #{"max-width: 1440px"};
+$desktop: #{"min-width: 1441px"};
+
+* {
+    font-family: $font-stack;
+    font-size: 62.5%;
+    font-weight: 200;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    &::selection {
+        background: $dark-blue;
+        color: $white;
+    }
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.active-flex {
+    display: flex !important;
+}
+
+.heading-text {
+    font-family: $font-stack;
+    font-size: $font-size-big;
+    font-weight: $font-weight-black;
+    text-align: center;
+    color: $dark-blue;
+    padding: 40px 0;
+}

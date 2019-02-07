@@ -1,0 +1,50 @@
+.card {
+    text-align: center;
+    margin: 0 15px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    .card-content {
+        background: $white;
+        width: 360px;
+        max-height: 450px;
+        border-radius: 5px;
+        padding: 70px 0;
+        margin-top: 30px;
+
+        @media ($pad) {
+            padding: 30px 0;
+            width: 300px;
+        }
+
+        @media ($tablet) {
+            padding: 70px 0;
+            width: 360px;
+        }
+
+        i {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: $font-size-medium;
+            font-weight: $font-weight-bold;
+        }
+
+        p {
+            margin-top: 20px;
+            padding: 0 50px;
+            font-weight: $font-weight-default;
+            color: darken($color: $white, $amount: 40%);
+            letter-spacing: 0.2;
+            line-height: 25px;
+
+            @media ($tablet) {
+                padding: 0 20px;
+            }
+        }
+    }
+}
