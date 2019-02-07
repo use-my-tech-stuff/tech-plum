@@ -180,3 +180,12 @@ $desktop: #{"min-width: 1441px"};
 .active-flex {
     display: flex !important;
 }
+
+.heading-text {
+    font-family: $font-stack;
+    font-size: $font-size-big;
+    font-weight: $font-weight-black;
+    text-align: center;
+    color: $dark-blue;
+    padding: 40px 0;
+}

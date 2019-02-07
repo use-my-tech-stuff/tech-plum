@@ -138,6 +138,14 @@ table {
 .active-flex {
   display: flex !important; }
 
+.heading-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
+  color: #0c1425;
+  padding: 40px 0; }
+
 .primary-btn {
   font-size: 1rem;
   font-weight: 500;
@@ -261,6 +269,41 @@ table {
       margin: 5px 0; }
     .featured-card .featured-card-content button {
       margin: 20px 0; }
+
+.item-card {
+  max-height: 450px;
+  height: 450px;
+  max-width: 360px;
+  margin: 10px;
+  box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif; }
+  .item-card img {
+    max-height: 240px;
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .item-card .item-card-content {
+    margin: 10px 20px; }
+    .item-card .item-card-content h1 {
+      font-weight: 900;
+      font-size: 1rem;
+      padding: 10px 0; }
+    .item-card .item-card-content span {
+      font-weight: 500; }
+    .item-card .item-card-content p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 20px;
+      height: 77px;
+      max-height: 77px;
+      margin: 5px 0; }
+    .item-card .item-card-content button {
+      margin: 10px 0; }
 
 .review-card {
   margin: 15px;
@@ -467,6 +510,15 @@ header {
     @media (max-width: 500px) {
       .reviews .reviews-content {
         width: 100%; } }
+
+.items {
+  display: flex;
+  justify-content: center; }
+  .items .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-bottom: 50px; }
 
 footer {
   font-family: "Roboto", sans-serif;

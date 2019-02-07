@@ -49,13 +49,4 @@ const nav = document.querySelector('.nav-items');
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
     nav.classList.toggle('active-flex')
-    // nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-
-    // if (nav.style.display === 'flex') {
-    //     nav.style.display = 'none';
-    // } else {
-    //     nav.style.display = 'flex';
-    // }
-
-    // nav.classList.toggle('active-flex');
 })
