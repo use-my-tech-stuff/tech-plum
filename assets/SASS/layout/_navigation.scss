@@ -28,9 +28,14 @@ header {
                 align-items: baseline;
             }
 
-            h1 {
-                font-size: $font-size-medium;
-                font-weight: $font-weight-black;
+            a {
+                text-decoration: none;
+                color: $dark-blue;
+
+                h1 {
+                    font-size: $font-size-medium;
+                    font-weight: $font-weight-black;
+                }
             }
 
             .hamburger {

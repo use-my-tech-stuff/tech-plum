@@ -178,6 +178,48 @@ table {
     background: #0260ee;
     color: #ffffff; }
 
+.btn-tertiary {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #0260ee;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
+.btn-tertiary-warning {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #e0a800;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
+.btn-tertiary-danger {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #dc3545;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
 .product-btn {
   font-size: 1rem;
   font-weight: 500;
@@ -303,7 +345,8 @@ table {
       max-height: 77px;
       margin: 5px 0; }
     .item-card .item-card-content button {
-      margin: 10px 0; }
+      margin: 10px 0;
+      cursor: pointer; }
 
 .review-card {
   margin: 15px;
@@ -355,9 +398,12 @@ header {
         justify-content: space-between;
         height: 10%;
         align-items: baseline; } }
-    header nav .logo h1 {
-      font-size: 1.6rem;
-      font-weight: 900; }
+    header nav .logo a {
+      text-decoration: none;
+      color: #0c1425; }
+      header nav .logo a h1 {
+        font-size: 1.6rem;
+        font-weight: 900; }
     header nav .logo .hamburger {
       display: none;
       outline: none; }
@@ -477,6 +523,30 @@ header {
         .featured .featured-content .featured-products {
           width: 100%; } }
 
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 50px 0; }
+  @media (max-width: 800px) {
+    .profile {
+      flex-direction: column;
+      text-align: center; } }
+  .profile .profile-content {
+    margin: 0 10px; }
+    .profile .profile-content img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%; }
+    .profile .profile-content h1 {
+      font-weight: 900;
+      font-size: 2.2rem;
+      margin: 10px 0; }
+    .profile .profile-content h2 {
+      margin: 5px 0; }
+
 .reviews {
   font-family: "Roboto", sans-serif;
   padding: 50px 0;
@@ -517,8 +587,47 @@ header {
   .items .items-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 1200px;
     margin-bottom: 50px; }
+
+.item {
+  padding: 182.8px 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif; }
+  @media (max-width: 1100px) {
+    .item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
+  .item .item-content {
+    margin: 0 20px;
+    max-width: 600px; }
+    .item .item-content img {
+      height: 400px;
+      width: 100%;
+      border-radius: 5px;
+      object-fit: cover; }
+    .item .item-content h1 {
+      margin-top: 10px;
+      font-size: 2.2rem;
+      font-weight: 900; }
+    .item .item-content h2 {
+      font-weight: 500;
+      color: gray;
+      margin-bottom: 30px; }
+    .item .item-content h3 {
+      font-weight: 900;
+      font-size: 1rem;
+      padding: 5px 0; }
+      .item .item-content h3 span {
+        font-weight: 500; }
+    .item .item-content p {
+      max-width: 600px;
+      letter-spacing: 0.3px;
+      line-height: 25px;
+      padding: 25px 0; }
 
 footer {
   font-family: "Roboto", sans-serif;
