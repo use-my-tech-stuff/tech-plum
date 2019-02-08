@@ -29,4 +29,4 @@ let test = team.map(person => {
     return `${person.name}, ${person.role}`
 })
 
-console.log(test)
+// console.log(test)
