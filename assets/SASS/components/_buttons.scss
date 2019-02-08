@@ -35,6 +35,51 @@
     }
 }
 
+.btn-tertiary {
+    font-size: $font-size-default;
+    font-weight: $font-weight-medium;
+    color: $white;
+    background: $blue;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-tertiary-warning {
+    font-size: $font-size-default;
+    font-weight: $font-weight-medium;
+    color: $white;
+    background: #e0a800;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-tertiary-danger {
+    font-size: $font-size-default;
+    font-weight: $font-weight-medium;
+    color: $white;
+    background: #dc3545;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
 .product-btn {
     font-size: $font-size-default;
     font-weight: $font-weight-medium;

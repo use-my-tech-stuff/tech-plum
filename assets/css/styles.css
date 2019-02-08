@@ -178,6 +178,48 @@ table {
     background: #0260ee;
     color: #ffffff; }
 
+.btn-tertiary {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #0260ee;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
+.btn-tertiary-warning {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #e0a800;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
+.btn-tertiary-danger {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: #dc3545;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+
 .product-btn {
   font-size: 1rem;
   font-weight: 500;
@@ -481,6 +523,30 @@ header {
         .featured .featured-content .featured-products {
           width: 100%; } }
 
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 50px 0; }
+  @media (max-width: 800px) {
+    .profile {
+      flex-direction: column;
+      text-align: center; } }
+  .profile .profile-content {
+    margin: 0 10px; }
+    .profile .profile-content img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%; }
+    .profile .profile-content h1 {
+      font-weight: 900;
+      font-size: 2.2rem;
+      margin: 10px 0; }
+    .profile .profile-content h2 {
+      margin: 5px 0; }
+
 .reviews {
   font-family: "Roboto", sans-serif;
   padding: 50px 0;
@@ -526,7 +592,7 @@ header {
     margin-bottom: 50px; }
 
 .item {
-  padding: 167.3px 0;
+  padding: 182.8px 0;
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif; }
